@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Олег Гретченко](https://up.htmlacademy.ru/htmlcss/27/user/959417).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Приходкин] (https://htmlacademy.ru/profile/prikhodkin).
 
 ---
 
