@@ -18,7 +18,7 @@
         <ul class="custom-nav">
           <li class="search-field">
             <form action="https://echo.htmlacademy.ru" method="get">
-              <div class="visually-hidden" for="site-search">
+              <div class="visually-hidden">
                 Поиск по сайту:
               </div>
               <div class="search-box">
@@ -38,14 +38,6 @@
               <button class="catalog-plus" type="button">
                 <span class="visually-hidden">Открыть</span>
               </button>
-              <ul class="popup-nav">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#"> Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li><a href="#">Квадрокоптеры</a></li>
-              </ul>
             </li>
             <li><a href="delivery.html">Доставка</a></li>
             <li><a href="warranty.html">Гарантия</a></li>
@@ -101,10 +93,7 @@
                 <p class="parameters">Карбон</p>
                 <p class="benefits">Материал</p>
               </li>
-            </ul>
-
-            
-
+            </ul>        
           </div>
           
 
@@ -306,38 +295,54 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal-nav">
+      <h2 class="visually-hidden">Всплывающее меню Каталога Товаров</h2>
+      <ul class="popup-nav">
+        <li><a href="#">Виртуальная реальность</a></li>
+        <li><a href="#">Моноподы для селфи</a></li>
+        <li><a href="#">Экшн-камеры</a> 
+      </ul>
+      <ul class="popup-nav">
+        <li><a href="#">Фитнес-браслеты</a></li>
+        <li><a href="#">Умные часы</a></li>
+      </ul>
+      <ul class="popup-nav">
+        <li><a href="#">Квадрокоптеры</a></li>
+      </ul>
+    </section>
     
     <section class="modal modal-login">
      <h2 class="visually-hidden">Форма входа</h2>
       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <div class="login-e-mail">
-        <label class="login">
-          Ваше имя:<br>
-          <input type="text" name="login" value="Имя Фамилия">
-        </label>
-        <label class="e-mail">
-          Ваш e-mail:<br>
-          <input type="text" name="e-mail" value="email@example.com">
-        </label>
+        <div class="login">
+          <p>Ваше имя:</p>
+          <input type="text" name="login" placeholder="Имя Фамилия">
+        </div>
+        <div class="e-mail">
+          <p>Ваш e-mail:</p>
+          <input type="text" name="e-mail" placeholder="email@example.com">
+        </div>
         <br>
         </div>
-        <label class="message" for="letter-field">Текст письма:<br></label>
-        <br>
-        <textarea name="letter" id="letter-field" rows="6" cols="60">
-          В свободной форме
-        </textarea>
-        <br>
-        <input type="submit" value="Отправить">
+        <div class="message">
+          <p>Текст письма:</p>
+        </div>
+        <textarea placeholder="В свободной форме" name="letter" id="letter-field" rows="6" cols="60"></textarea>
+        <button class="filter-button" type="submit" value="Отправить">Отправить</button>
       </form>
       <button class="modal-close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
 
-    <section class="popup-map">
+    <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
       <img src="img/zoom-map.png" width="960" height="559" alt="Увеличенная карта с расположением офиса по адресу улица Строителей, 15">
-      <button type="button">Закрыть</button>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
 
   </body>

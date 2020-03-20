@@ -10,7 +10,7 @@
   <body>
 
     <header class="main-header">
-      <div class="container">
+      <div class="container-header-catalog">
       <div class="logo">
         <a href="index.html"> 
           <img src="img/logo.svg" width="163" height="35" alt="Логотип Device">
@@ -42,14 +42,6 @@
             <button class="catalog-plus" type="button">
               <span class="visually-hidden">Открыть</span>
             </button>
-            <ul class="popup-nav">
-              <li><a href="#">Виртуальная реальность</a></li>
-              <li><a href="#"> Моноподы для селфи</a></li>
-              <li><a href="#">Экшн-камеры</a></li>
-              <li><a href="#">Фитнес-браслеты</a></li>
-              <li><a href="#">Умные часы</a></li>
-              <li><a href="#">Квадрокоптеры</a></li>
-            </ul>
           </li>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="warranty.html">Гарантия</a></li>
@@ -61,7 +53,7 @@
 
     <main class="main-content-catalog">
       <div class="container">
-        <div class="cont">
+        <div class="container-breadcrumbs">
       <h1 class="subtitle">Моноподы для селфи</h1>
       <ul class="breadcrumbs">   
         <li><a href="index.html">Главная</a></li>
@@ -91,6 +83,7 @@
      
       <div class="container-filters">
         <section class="forms-filters">
+          <h2 class="visually-hidden">Форма отбора товаров</h2>
           <form class="filter" method="get"
                 action="https://echo.htmlacademy.ru">
             <fieldset>
@@ -226,6 +219,7 @@
           </ul>
         </section>
         <section class="pagination">
+          <h2 class="visually-hidden">Панель переключения страниц</h2>
           <ul class="control-nav">
             <li><a class="back" href="#">Назад</a></li>
             <li><a>1</a></li>
@@ -318,6 +312,22 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal-nav">
+      <h2 class="visually-hidden">Всплывающее меню Каталога Товаров</h2>
+      <ul class="popup-nav">
+        <li><a href="#">Виртуальная реальность</a></li>
+        <li><a href="#">Моноподы для селфи</a></li>
+        <li><a href="#">Экшн-камеры</a> 
+      </ul>
+      <ul class="popup-nav">
+        <li><a href="#">Фитнес-браслеты</a></li>
+        <li><a href="#">Умные часы</a></li>
+      </ul>
+      <ul class="popup-nav">
+        <li><a href="#">Квадрокоптеры</a></li>
+      </ul>
+    </section>
 
   </body>
 </html>

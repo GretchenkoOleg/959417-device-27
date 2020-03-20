@@ -54,7 +54,6 @@ header {
 
 .main-header {
     display: block;
-    min-height: 299px;
     margin: 0 auto;
     margin-top: 40px;
     width: 1160px;   
@@ -64,6 +63,11 @@ header {
     box-sizing: border-box;
     padding-left: 40px;
     padding-right: 40px;
+    min-height: 299px;
+}
+
+.main-header .container-header-catalog {
+    min-height: 186px;
 }
 
 /* logo */
@@ -283,10 +287,6 @@ header {
     background-image: url("../img/plus.png");
     background-repeat: no-repeat;
     background-position: 0 0; 
-}
-
-.popup-nav {
-    display: none;
 }
 
 .numeral {    
@@ -1161,37 +1161,34 @@ footer {
     opacity: 0.3;
 }
 
-/* popup */
-
-/*.login-form,*/
-.popup-map {
-    display: none;
-}
-
+/* modal-windows*/
 
 .modal {
     position: absolute;
 
     color: #000000;
-    padding: 100px;
+    
 
     background-color: #ffffff;
     box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
 }
 
 .modal-login {
+    width: 960px;
+    min-height: 553px;
+
     top: 1118px;
-    left: 50%;
+    left: 50%;    
 
-    width: 760px;
-    min-height: 453px;
+    padding: 100px;
+    margin-left: -480px;
 
-    margin-left: -483px;
+    box-sizing: border-box;
 
     z-index: 1;
 }
 
-.modal-login label {
+.modal-login div {
     font-family: "Gilroy-ExtraBold", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
@@ -1199,19 +1196,28 @@ footer {
     background-color: #ffffff;
 }
 
-
 .login-form input[type="text"] {
     font-family: "OpenSans", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
-    color: rgba(70, 70, 70, 0.4);
+    color: rgba(70, 70, 70, 0.8);
     background-color: #e5e5e5;
+    opacity: 50%;
+    
     border: none;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 20px;
 }
 
 .login-e-mail {
     display: flex;
     justify-content: space-around;
+}
+
+.login-e-mail p {
+    margin: 0;
+    margin-bottom: 13px;
 }
 
 .e-mail {
@@ -1228,8 +1234,53 @@ footer {
     min-height: 50px; 
 }
 
+.message p {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 13px;
+}
 
+.login-form textarea {
+    font-family: "OpenSans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(70, 70, 70, 0.8);
+    background-color: #e5e5e5;
+    opacity: 50%;
 
+    width: 760px;
+    min-height: 156px;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-top: 18px;
+
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.login-form .filter-button {
+    margin: 0;
+    padding: 0;
+    margin-top: 55px;
+}
+
+.modal-map {
+    width: 960px;
+    min-height: 559px;
+
+    top: 1942px;
+    left: 50%;
+
+    margin-left: -480px;
+
+    box-sizing: border-box;
+
+    z-index: 1;
+}
 
 
 .modal-close {
@@ -1241,10 +1292,12 @@ footer {
     height: 55px;
     border-radius: 50%;
 
-    background-color: #f7e296;
+    background-color: #f0c52e;
+    opacity: 50%;
     border: 0;
 
     cursor: pointer;
+    outline: none;
 }
 
 .modal-close::before,
@@ -1267,6 +1320,73 @@ footer {
 .modal-close::after {
     transform: rotate(-45deg);
 }
+
+.modal-close:hover,
+.modal-close:focus {
+    opacity: 100%;
+}
+
+.modal-close:active {
+    opacity: 30%;
+}
+
+.modal-nav {
+    position: absolute;
+    display: flex;
+
+    width: 1160px;
+    min-height: 129px;
+
+    top: 210px;
+    left: 50%;    
+    margin-left: -580px;
+    padding: 0 60px;
+
+    box-sizing: border-box;
+    color: #000000;  
+    background-color: #f7e296;
+
+    z-index: 1;
+}
+
+.popup-nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.popup-nav a{
+    font-family: "OpenSans-Light", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+    color: #000000;
+    background-color: #f7e296;
+}
+
+.modal-nav ul:nth-child(3) {
+    margin-left: 58px;
+}
+
+.modal-nav ul:nth-child(4) {
+    margin-left: 77px;   
+}
+
+.popup-nav a:hover,
+.popup-nav a:focus {
+    opacity: 60%;
+}
+
+.popup-nav a:active {
+    opacity: 30%;
+}
+
+.modal,
+.modal-nav {
+   display: none;
+}
+
+
 /* visually-hidden */
 .visually-hidden {
     position: absolute;
@@ -1291,7 +1411,7 @@ footer {
     width: 1440px;
 }
 
-.cont {
+.container-breadcrumbs {
     width: 1160px;
     margin: 0 auto;
     margin-top: 44px;
