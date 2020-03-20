@@ -67,6 +67,9 @@ header {
 }
 
 .main-header .container-header-catalog {
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
     min-height: 186px;
 }
 
