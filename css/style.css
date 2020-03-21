@@ -119,7 +119,6 @@ header {
 .custom-nav a:active,
 .nav a:active {
     color: rgba(0, 0, 0, 0.3);
-
 }
 
 .custom-nav {
@@ -153,6 +152,7 @@ header {
     height: 15px;
     background-color: #f7e296;
     border: none;
+    outline: none;
 }
 
 .search-field {
@@ -292,17 +292,7 @@ header {
     background-position: 0 0; 
 }
 
-.numeral {    
-    position: absolute;
-    font-family: "Gilroy-ExtraBold", Arial, sans-serif;
-    font-size: 179px;
-    line-height: 179px;
-    letter-spacing: 1.79px;
-    color: #ffffff;
 
-    margin-left: 885px;
-    margin-top: 24px;
-}
 
 /* MAIN */
 
@@ -332,6 +322,19 @@ header {
     margin-left: 125px;
     margin-top: -33px;
 }
+
+.numeral {    
+    position: absolute;
+    font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+    font-size: 179px;
+    line-height: 179px;
+    letter-spacing: 1.79px;
+    color: #ffffff;
+
+    margin-left: 327px;
+    margin-top: -90px;
+}
+
 
 .slogan {
     font-family: "Gilroy-ExtraBold", Arial, sans-serif;
