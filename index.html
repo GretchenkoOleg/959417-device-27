@@ -18,18 +18,18 @@
         <ul class="custom-nav">
           <li class="search-field">
             <form action="https://echo.htmlacademy.ru" method="get">
-              <div class="visually-hidden">
+              <label class="visually-hidden" for="site-search">
                 Поиск по сайту:
-              </div>
+              </label>
               <div class="search-box">
                 <input class="site-search" type="text" name="search" id="site-search" value="Поиск по сайту">
               </div>
               <button class="visually-hidden" type="button">Найти</button> 
             </form>
           </li>
-          <li class="user"><a class="login-link" href="#">Войти</a></li>
-          <li class="compare"><a href="#">Сравнить</a></li>
-          <li class="basket"><a href="#">Корзина</a></li>
+          <li><a class="user login-link" href="#">Войти</a></li>
+          <li><a class="compare" href="#">Сравнить</a></li>
+          <li><a class="basket" href="#">Корзина</a></li>
         </ul>
         <nav>
           <ul class="nav">
@@ -94,7 +94,7 @@
             </ul>        
           </div>        
         </section>
-       <section class="visually-hidden slider">
+        <section class="visually-hidden slider">
           <h2 class="visually-hidden">Слайдер с описанием</h2>
           <a href="#">
             <img src="img/slider-2.png" width="384" height="486" alt="Слайдер с фото фитнес-браслета">
@@ -106,7 +106,6 @@
               не пропускать занятия и соблюдать диету.
             </p>
             <a class="button-product" href="#">Подробнее</a>
-            
             <ul class="features">
               <li>
                 <p class="parameters">48 часов</p>
@@ -203,7 +202,7 @@
                Ведь мы неплохо заработаем, поднимая его на ваш этаж.
             </p>
           </div>
-            <img src="img/delivery.png" width="136" height="164" alt="Иконка доставка"> 
+          <img src="img/delivery.png" width="136" height="164" alt="Иконка доставка"> 
         </div>       
       </section>
       <section class="visually-hidden services-background">
@@ -228,7 +227,7 @@
               Товар, не дом, конечно же.
             </p>
           </div>
-            <img src="img/warranty.png" width="136" height="164" alt="Иконка гарантия"> 
+          <img src="img/warranty.png" width="136" height="164" alt="Иконка гарантия"> 
         </div>       
       </section>
       <section class="visually-hidden services-background">
@@ -253,7 +252,7 @@
               условия кредита. Выгодные для нашего банка, разумеется.
             </p>
           </div>
-            <img src="img/credit.png" width="136" height="164" alt="Иконка кредит"> 
+          <img src="img/credit.png" width="136" height="164" alt="Иконка кредит"> 
         </div>       
       </section>
       <div class="container">
@@ -261,23 +260,23 @@
           <h2 class="visually-hidden">Популярные бренды</h2>
           <ul class="popular-brand">
             <li>
-              <a href="#">
-                <img src="img/brand-1.png" width="260" height="100" alt="Логотип Dji">
+              <a class="brand-1-bw" href="#">
+                <img src="img/brand-1bw.png" width="260" height="100" alt="Логотип Dji">
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src="img/brand-2.png" width="260" height="100" alt="Логотип SP Gadgets">
+              <a class="brand-2-bw" href="#">
+                <img src="img/brand-2bw.png" width="260" height="100" alt="Логотип SP Gadgets">
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src="img/brand-3.png" width="260" height="100" alt="Логотип GoPro">
+              <a class="brand-3-bw" href="#">
+                <img src="img/brand-3bw.png" width="260" height="100" alt="Логотип GoPro">
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src="img/brand-4.png" width="260" height="100" alt="Доготип Vive">
+              <a class="brand-4-bw" href="#">
+                <img src="img/brand-4bw.png" width="260" height="100" alt="Доготип Vive">
               </a>
             </li>
           </ul>
@@ -326,9 +325,9 @@
             </a>
           </div>         
           <ul class="footer-custom-nav">
-            <li class="footer-user"><a href="#">Войти</a></li>
-            <li class="footer-compare"><a href="#">Сравнить</a></li>
-            <li class="footer-basket"><a href="#">Корзина</a></li>
+            <li><a class="footer-user" href="#">Войти</a></li>
+            <li><a class="footer-compare" href="#">Сравнить</a></li>
+            <li><a class="footer-basket" href="#">Корзина</a></li>
           </ul>
         </div>
         <div class="container-footer-nav">     
@@ -389,7 +388,7 @@
       <ul class="popup-nav">
         <li><a href="#">Виртуальная реальность</a></li>
         <li><a href="#">Моноподы для селфи</a></li>
-        <li><a href="#">Экшн-камеры</a> 
+        <li><a href="#">Экшн-камеры</a></li> 
       </ul>
       <ul class="popup-nav">
         <li><a href="#">Фитнес-браслеты</a></li>
@@ -401,36 +400,42 @@
     </section>
     
     <section class="modal modal-login">
-     <h2 class="visually-hidden">Форма входа</h2>
-      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-        <div class="login-email">
-          <div class="login">
-            <p>Ваше имя:</p>
-            <input type="text" name="login" placeholder="Имя Фамилия" >
+      <h2 class="visually-hidden">Форма входа</h2>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <div class="login-email">
+            <div class="login">
+              <label for="your-name">
+                <p>Ваше имя:</p>
+              </label>
+              <input type="text" name="login" placeholder="Имя Фамилия" id="your-name">
+            </div>
+            <div class="email">
+              <label for="your-email">
+                <p>Ваш e-mail:</p>
+              </label>
+              <input type="text" name="email" placeholder="email@example.com" id="your-email">
+            </div>
           </div>
-          <div class="email">
-            <p>Ваш e-mail:</p>
-            <input type="text" name="email" placeholder="email@example.com">
+          <div class="message">
+            <label for="text-letter">
+              <p>Текст письма:</p>
+            </label>
           </div>
-        </div>
-        <div class="message">
-          <p>Текст письма:</p>
-        </div>
-        <textarea placeholder="В свободной форме" name="letter" id="letter-field" rows="6" cols="60"></textarea>
-        <button class="filter-button" type="submit" value="Отправить">Отправить</button>
-      </form>
-      <button class="modal-close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </section>
+          <textarea placeholder="В свободной форме" name="letter" id="letter-field" rows="6" cols="60" id="text-letter"></textarea>
+          <button class="filter-button" type="submit" value="Отправить">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </section>
 
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">Карта</h2>
-      <img src="img/zoom-map.png" width="960" height="559" alt="Увеличенная карта с расположением офиса по адресу улица Строителей, 15">
-      <button class="modal-close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </section>
+      <section class="modal modal-map">
+        <h2 class="visually-hidden">Карта</h2>
+        <img src="img/zoom-map.png" width="960" height="559" alt="Увеличенная карта с расположением офиса по адресу улица Строителей, 15">
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </section>
 
   </body>
 </html>

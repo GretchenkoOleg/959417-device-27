@@ -27,12 +27,12 @@
               <button class="visually-hidden" type="button">Найти</button> 
             </form>
           </li>
-          <li class="user">
-            <span>Валентин Петухов</span>
+          <li class="profile">
+            <a class="user" href="profile.html">Валентин Петухов</a>
             <a class="exit" href="#">Выйти</a>
           </li>
-          <li class="compare"><a href="#">Сравнить</a></li>
-          <li class="basket"><a href="#">Корзина</a></li>
+          <li><a class="compare" href="#">Сравнить</a></li>
+          <li><a class="basket" href="#">Корзина</a></li>
         </ul>
         <nav>
           <ul class="nav">
@@ -51,7 +51,7 @@
     </header>
 
     <main class="main-content-catalog">
-      <div class="container">
+      <section class="container">
         <div class="container-breadcrumbs">
           <h1 class="subtitle">Моноподы для селфи</h1>
           <ul class="breadcrumbs">   
@@ -64,7 +64,7 @@
           <h2 class="visually-hidden">Фильтр товаров</h2>
           <div class="background-subject">
             <span class="subject">Фильтр:</span>
-          </div>
+          </div> 
           <div class="sorting">
             <h2>Сортировка:</h2>
             <ul class="sorting-nav">
@@ -73,8 +73,12 @@
               <li><a href="#">По популярности</a></li>
             </ul>
             <div class="arrows">
-              <a class="up" href="#"></a>
-              <a class="down" href="#"></a>
+              <a class="up" href="#">
+                <p class="visually-hidden">Сортировка по возростанию</p>
+              </a>
+              <a class="down" href="#">
+                <p class="visually-hidden">Сортировка по убыванию</p>
+              </a>
             </div>
           </div>
         </section>
@@ -223,7 +227,7 @@
             </section> 
           </div>
         </div>
-      </div>       
+      </section>       
     </main>
 
     <footer class="main-footer">
@@ -244,12 +248,12 @@
             </a>
           </div>           
           <ul class="footer-custom-nav">
-            <li class="footer-user">
-              <span>Валентин Петухов</span>
+            <li class="profile">
+              <a class="footer-user" href="profile.html">Валентин Петухов</a>
               <a class="exit" href="#">Выйти</a>
             </li>
-            <li class="footer-compare"><a href="#">Сравнить</a></li>
-            <li class="footer-basket"><a href="#">Корзина</a></li>
+            <li><a class="footer-compare" href="#">Сравнить</a></li>
+            <li><a class="footer-basket" href="#">Корзина</a></li>
           </ul>
         </div>
         <div class="container-footer-nav">     
@@ -310,7 +314,7 @@
       <ul class="popup-nav">
         <li><a href="#">Виртуальная реальность</a></li>
         <li><a href="#">Моноподы для селфи</a></li>
-        <li><a href="#">Экшн-камеры</a> 
+        <li><a href="#">Экшн-камеры</a></li> 
       </ul>
       <ul class="popup-nav">
         <li><a href="#">Фитнес-браслеты</a></li>
