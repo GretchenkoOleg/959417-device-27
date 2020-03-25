@@ -1387,6 +1387,13 @@ a {
     z-index: 1;
 }
 
+.modal-map iframe {
+    position: relative;
+    z-index: 2;
+
+    border: none;
+}
+
 .modal-close {
     position: absolute;
     top: 22px;
@@ -1479,7 +1486,7 @@ a {
 
 .modal,
 .modal-nav {
-   display: none;
+  display: none;
 }
 
 /* visually-hidden */
