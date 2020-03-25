@@ -508,11 +508,10 @@ a {
 
 .popular-product {
     display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     margin-left: -20px;
-    width: 1200px;
-    flex-wrap: wrap;
 }
 
 .popular-product p {
@@ -1241,7 +1240,7 @@ a {
 .modal {
     position: absolute;
 
-    /*display: none;*/
+    display: none;
 
     color: #000000;
     
@@ -1385,14 +1384,18 @@ a {
     margin-left: -480px;
 
     box-sizing: border-box;
-    z-index: 1;
+    
 }
 
 .modal-map iframe {
-    position: relative;
+    position: absolute;
     z-index: 2;
 
     border: none;
+}
+
+.modal-map img {
+    z-index: 1;
 }
 
 .modal-close {
@@ -1710,6 +1713,10 @@ a {
     position: relative;
     margin-top: 25px;
     margin-left: auto;
+}
+
+.arrows p {
+    font-size: 0;
 }
 
 .arrows .up {
