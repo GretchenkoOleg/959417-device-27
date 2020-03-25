@@ -1512,10 +1512,6 @@ a {
 
 /* MAIN */
 
-.main-content-catalog {
-    overflow: hidden;
-}
-
 .container-breadcrumbs {
     width: 1160px;
     margin: 0 auto;
@@ -1713,7 +1709,12 @@ a {
 .sorting .arrows {
     position: relative;
     margin-top: 18px;
-    margin-left: 232px;
+    margin-left: auto;
+}
+
+.arrows a {
+    width: 10px;
+    height: 10px;
 }
 
 .arrows .up {
