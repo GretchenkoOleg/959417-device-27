@@ -1295,9 +1295,10 @@ a {
     justify-content: space-around;
 }
 
-.login-email p {
+.login-email input {
     margin: 0;
-    margin-bottom: 13px;
+    margin-top: 13px;
+    margin-bottom: 39px;
 }
 
 .email {
@@ -1343,12 +1344,6 @@ a {
     border: none;
 }
 
-.message p {
-    margin: 0;
-    margin-top: 30px;
-    margin-bottom: 13px;
-}
-
 .login-form textarea {
     font-family: "OpenSans", Arial, sans-serif;
     font-size: 14px;
@@ -1368,6 +1363,10 @@ a {
 
     border: none;
     resize: none;
+}
+
+.message textarea {
+    margin-top: 13px;
 }
 
 .login-form .filter-button {
@@ -1486,7 +1485,7 @@ a {
 
 .modal,
 .modal-nav {
-  display: none;
+  /*display: none;*/
 }
 
 /* visually-hidden */
