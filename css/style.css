@@ -474,11 +474,11 @@ a {
 }
 
 .radio-slider label:before {
-	content: "";
+    content: "";
     display: inline-block;
     vertical-align: baseline;
-	width: 10px;
-	height: 10px;
+    width: 10px;
+    height: 10px;
     position: absolute;
     border: solid 1.5px #000000;
     border-radius: 6px;
@@ -1241,6 +1241,8 @@ a {
 .modal {
     position: absolute;
 
+    /*display: none;*/
+
     color: #000000;
     
 
@@ -1438,6 +1440,8 @@ a {
     position: absolute;
     display: flex;
 
+    display: none;
+
     width: 1160px;
     min-height: 129px;
     top: 210px;
@@ -1481,11 +1485,6 @@ a {
 
 .popup-nav a:active {
     opacity: 30%;
-}
-
-.modal,
-.modal-nav {
-  display: none;
 }
 
 /* visually-hidden */
