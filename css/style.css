@@ -1707,57 +1707,43 @@ a {
 }
 
 .sorting .arrows {
+    display: flex;
     position: relative;
-    margin-top: 18px;
+    margin-top: 25px;
     margin-left: auto;
 }
 
-.arrows a {
-    width: 10px;
-    height: 10px;
-}
-
 .arrows .up {
-    position: absolute;
+    position: relative;
     margin-top: 4px;
-}
-
-.up::before {
-    content: "";
-    position: absolute;
-    width: 11px;
-    height: 10px;
-    top: 7px;
-
-    background-image: url("../img/up.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;   
 
     opacity: 20%;
 }
 
+.up {
+    display: block;
+    width: 11px;
+    height: 10px;
+    background: no-repeat url("../img/up.svg");
+}
+
+.down {
+    display: block;
+    width: 11px;
+    height: 10px;
+    background: no-repeat url("../img/down.svg");
+}
+
 .arrows .down {
-    position: absolute;
-    margin-left: 28px;
+    position: relative;
+    margin-left: 18px;
     margin-top: 4px;
 }
 
-.down::before {
-    content: "";
-    position: absolute;
-    width: 11px;
-    height: 10px;
-    top: 7px;
-
-    background-image: url("../img/down.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;   
-}
-
-.down:hover::before,
-.up:hover::before,
-.down:focus::before,
-.up:focus::before {
+.down:hover,
+.up:hover,
+.down:focus,
+.up:focus {
     opacity: 40%;
 }
 
