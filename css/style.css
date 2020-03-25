@@ -48,15 +48,13 @@ a {
 
 /* HEADER */
 
-header {
-    background-color: #f7e296;
-}
-
 .main-header {
     display: block;
     margin: 0 auto;
     margin-top: 40px;
-    width: 1160px;   
+    width: 1160px; 
+    
+    background-color: #f7e296;
 }
 
 .main-header .container {
@@ -647,6 +645,7 @@ header {
     text-transform: uppercase;
 
     display: inline-block;
+    vertical-align: baseline;
     position: relative;
     min-height: 40px;
     z-index: 1;
@@ -672,13 +671,15 @@ header {
     box-sizing: border-box;
     padding-left: 19px;
     padding-top: 10px;
-    padding-bottom: 10px;    
+    padding-bottom: 10px; 
+    z-index: auto;   
 }
 
 .active-li a:hover,
 .active-li a:focus {
     color: #f7e184;
     background-color: #000000;
+    z-index: auto;
 }
 
 .active-li a:hover::before,
@@ -790,6 +791,7 @@ header {
     text-transform: uppercase;
 
     display: inline-block;
+    vertical-align: baseline;
 }
 
 .information {
@@ -797,6 +799,7 @@ header {
     width: 475px;
     flex-wrap: wrap;
 }
+
 .information::before {
     content: "";
     position: absolute;
@@ -816,6 +819,7 @@ header {
 .advantage p:last-child {
     margin-top: 31px;
 }
+
 .information-points {
     margin: 0;
     padding: 0;
@@ -1077,6 +1081,7 @@ header {
 .footer-nav {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
 
@@ -1382,7 +1387,6 @@ header {
     z-index: 1;
 }
 
-
 .modal-close {
     position: absolute;
     top: 22px;
@@ -1502,8 +1506,8 @@ header {
 
 /* MAIN */
 
-.main-content-catalog .container {
-    width: 1160px;
+.main-content-catalog {
+    overflow: hidden;
 }
 
 .container-breadcrumbs {
@@ -1584,15 +1588,33 @@ header {
     color: rgba(0, 0, 0, 0.1);
 }
 
+.filters-wrapper {
+    background: #ebebeb;
+}
+
 .filters-header {
     display: flex;
+    width: 1160px;
+    margin: 0 auto;
     margin-top: 43px;
 }
 
 .background-subject {
+    position: relative;
     width: 327px;
     min-height: 71px;
     background-color: #d9d9d9;
+}
+
+.background-subject::before {
+    content: "";
+    display: block;
+    background: #d9d9d9;
+    position: absolute;
+    top: 0;
+    left: -950px;
+    width: 1000px;
+    height: 71px;
 }
 
 .subject {
@@ -1642,6 +1664,7 @@ header {
 
 .sorting-nav {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     margin-top: 18px;
@@ -1737,10 +1760,22 @@ header {
 }
 
 .forms-filters {
+    position: relative;
     display: flex;
     margin: 0;
     padding: 0;
     min-height: 1217px;
+}
+
+.forms-filters::before {
+    content: "";
+    display: block;
+    background: #ebebeb;
+    position: absolute;
+    top: 0;
+    left: -950px;
+    width: 1000px;
+    height: 100%;
 }
 
 .filter {
@@ -1781,6 +1816,7 @@ header {
 
 .price-controls label {
     display:inline-block;
+    vertical-align: baseline;
 
     cursor: pointer;
 }
@@ -1970,7 +2006,7 @@ header {
     opacity: 25%;
 }
 
-button {
+.filter-button {
     padding: 0;
     border: none;
     font: inherit;
@@ -1988,8 +2024,9 @@ button {
     text-align: center;
     color: #000000;
     text-transform: uppercase;
-
+    
     display: inline-block;
+    vertical-align: baseline;
     position: relative;
     width: 200px;
 
@@ -2078,6 +2115,7 @@ button {
     text-transform: uppercase;
 
     display: inline-block;
+    vertical-align: baseline;
     position: absolute;
     width: 200px;
     
@@ -2117,6 +2155,7 @@ button {
     opacity: 50%;
 
     display: inline-block;
+    vertical-align: baseline;
     position: absolute;
     width: 144px;
     top: 56%;
@@ -2230,6 +2269,7 @@ button {
 
 .back {
     display: inline-block;
+    vertical-align: baseline;
     width: 136px;
     text-align: center;
 }
@@ -2245,6 +2285,7 @@ button {
 
 .forward {
     display: inline-block;
+    vertical-align: baseline;
     width: 136px;
     text-align: center;
 }
@@ -2258,9 +2299,4 @@ button {
     color: rgba(0, 0, 0, 0.3);
 }
 
-
-.bb {
-    margin-top: 43px;
-    background-color: #d9d9d9;
-}
     
